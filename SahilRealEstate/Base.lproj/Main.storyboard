@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="FKj-U2-sbe">
+    <device id="retina4_0" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Saved-->
+        <scene sceneID="MeO-e0-fJX">
+            <objects>
+                <viewController id="8db-pi-yWy" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Ye8-Xo-cZF">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="zTa-4R-324"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Saved" image="bookmark" catalog="system" selectedImage="bookmark.fill" id="fRh-ju-lea"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="XOh-2V-gLV" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="600" y="369"/>
+        </scene>
+        <!--Search-->
+        <scene sceneID="wMa-xQ-Tob">
+            <objects>
+                <viewController id="LDo-tX-8es" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="ASu-3V-8Vt">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <searchBar contentMode="redraw" showsSearchResultsButton="YES" showsScopeBar="YES" translatesAutoresizingMaskIntoConstraints="NO" id="w20-fO-DdR">
+                                <rect key="frame" x="6" y="0.0" width="314" height="103"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <scopeButtonTitles>
+                                    <string>Title</string>
+                                    <string>Title</string>
+                                    <string>Title</string>
+                                    <string>Title</string>
+                                </scopeButtonTitles>
+                            </searchBar>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="pfh-uV-0qR">
+                                <rect key="frame" x="0.0" y="103" width="320" height="465"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" id="PLc-7z-n2B">
+                                        <rect key="frame" x="0.0" y="28" width="320" height="43.5"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="PLc-7z-n2B" id="JPY-MW-Tbz">
+                                            <rect key="frame" x="0.0" y="0.0" width="320" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="IUS-dv-2ZL"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="pfh-uV-0qR" firstAttribute="leading" secondItem="IUS-dv-2ZL" secondAttribute="leading" id="0r8-ev-l8O"/>
+                            <constraint firstItem="w20-fO-DdR" firstAttribute="leading" secondItem="IUS-dv-2ZL" secondAttribute="leading" constant="6" id="4RD-Hc-Gcp"/>
+                            <constraint firstItem="IUS-dv-2ZL" firstAttribute="trailing" secondItem="w20-fO-DdR" secondAttribute="trailing" id="Bm4-uE-9Xe"/>
+                            <constraint firstItem="pfh-uV-0qR" firstAttribute="trailing" secondItem="IUS-dv-2ZL" secondAttribute="trailing" id="C2g-0T-t3s"/>
+                            <constraint firstAttribute="bottom" secondItem="pfh-uV-0qR" secondAttribute="bottom" id="YNL-Uu-2TY"/>
+                            <constraint firstItem="w20-fO-DdR" firstAttribute="top" secondItem="IUS-dv-2ZL" secondAttribute="top" id="lbX-QF-Iai"/>
+                            <constraint firstItem="pfh-uV-0qR" firstAttribute="top" secondItem="w20-fO-DdR" secondAttribute="bottom" id="myH-D5-eWq"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Search" image="magnifyingglass" catalog="system" selectedImage="magnifyingglass.circle.fill" id="heE-eA-16X"/>
+                    <toolbarItems/>
+                    <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="L01-Pc-9TP" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="600" y="-300"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="mHo-hz-52H">
+            <objects>
+                <tabBarController id="FKj-U2-sbe" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="DHx-JN-MPs">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="LDo-tX-8es" kind="relationship" relationship="viewControllers" id="3dj-ct-K1S"/>
+                        <segue destination="8db-pi-yWy" kind="relationship" relationship="viewControllers" id="iib-cH-mzs"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="1jX-hi-4wU" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-118" y="7"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="bookmark" catalog="system" width="112" height="128"/>
+        <image name="bookmark.fill" catalog="system" width="112" height="128"/>
+        <image name="magnifyingglass" catalog="system" width="128" height="115"/>
+        <image name="magnifyingglass.circle.fill" catalog="system" width="128" height="121"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
